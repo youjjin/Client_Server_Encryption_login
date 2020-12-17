@@ -564,7 +564,7 @@ int main(int argc, char *argv[])
 			unsigned char* arry[3] = {0x00, };
 			int tok_len = 0;
 			token_sep(plaintext, arry, &tok_len);
-			if(tok_len != 1)
+			if(tok_len != 3)
 			{
 				memset(&msg_in, 0, sizeof(msg_in));
 				n = readn(sock, &msg_in, sizeof(APP_MSG));
